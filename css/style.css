@@ -777,6 +777,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Ensure proper order on mobile - BBB first, then Preferred Contractor */
+@media (max-width: 479px) {
+    .trust-item:first-child {
+        order: 1;
+    }
+    
+    .trust-item:nth-child(2) {
+        order: 2;
+    }
+}
+
 .trust-item {
     text-align: center;
     padding: 1.5rem;
