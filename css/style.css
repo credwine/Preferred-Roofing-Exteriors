@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 95px;
     padding: 0;
     max-width: 1400px;
     margin: 0 auto;
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
         height: auto;
-        min-height: 70px;
+        min-height: 80px;
         flex-wrap: wrap;
         gap: 0.5rem;
     }
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         height: auto;
-        min-height: 60px;
+        min-height: 70px;
         gap: 0.5rem;
     }
 }
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo img {
-    height: 60px;
+    height: 70px;
     width: auto;
     display: block;
 }
@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo-name {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #ffffff;
     letter-spacing: -0.02em;
     line-height: 1.2;
@@ -232,13 +232,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767px) {
     .logo-name {
-        font-size: 1rem;
+        font-size: 1.125rem;
         white-space: normal;
         line-height: 1.1;
     }
     
     .logo-tagline {
-        font-size: 0.625rem;
+        font-size: 0.6875rem;
         line-height: 1.2;
     }
     
@@ -254,13 +254,17 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo img {
-        height: 40px;
+        height: 45px;
         flex-shrink: 0;
+    }
+    
+    .logo-name {
+        font-size: 1.125rem;
     }
 }
 
 .logo-tagline {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
     letter-spacing: 0.05em;
@@ -288,9 +292,9 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     position: relative;
-    padding: 0.75rem 1.5rem;
+    padding: 0.875rem 1.75rem;
     transition: color 0.2s ease;
     letter-spacing: -0.01em;
     white-space: nowrap;
