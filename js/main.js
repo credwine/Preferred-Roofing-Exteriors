@@ -13,53 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Enhanced Header scroll effect with smooth transitions
-    let lastScroll = 0;
-    let ticking = false;
-
-    function updateHeader() {
-        const currentScroll = window.pageYOffset || window.scrollY || 0;
-        const hero = document.querySelector('.hero');
-        const heroBottom = hero ? hero.offsetTop + hero.offsetHeight : 0;
-        
-        // Add scrolled class when scrolling past hero or 150px (increased threshold)
-        if (currentScroll > Math.min(heroBottom - 200, 150)) {
-            if (!header.classList.contains('scrolled')) {
-                header.classList.add('scrolled');
-            }
-        } else {
-            if (header.classList.contains('scrolled')) {
-                header.classList.remove('scrolled');
-            }
-        }
-        
-        lastScroll = currentScroll;
-        ticking = false;
-    }
-
-    // Set initial state - ensure header starts transparent
-    if (header) {
-        header.classList.remove('scrolled');
-        // Force transparent background
-        header.style.background = 'transparent';
-        header.style.backgroundColor = 'transparent';
-    }
-    
-    // Wait for page to fully load before checking scroll position
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() {
-            updateHeader();
-        });
-    } else {
-        updateHeader();
-    }
-
-    window.addEventListener('scroll', function() {
-        if (!ticking) {
-            window.requestAnimationFrame(updateHeader);
-            ticking = true;
-        }
-    }, { passive: true });
 
     // Close mobile menu when clicking a link
     const mobileLinks = document.querySelectorAll('.nav-mobile a');
