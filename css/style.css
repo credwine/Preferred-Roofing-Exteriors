@@ -257,10 +257,6 @@ h1, h2, h3, h4, h5, h6 {
         height: 45px;
         flex-shrink: 0;
     }
-    
-    .logo-name {
-        font-size: 1.125rem;
-    }
 }
 
 .logo-tagline {
