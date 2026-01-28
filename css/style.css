@@ -507,9 +507,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
+    .btn {
+        padding: 0.625rem 1rem;
+        font-size: 0.875rem;
+    }
+    
     .btn-primary {
-        padding: 0.875rem 1.75rem;
-        font-size: 0.9375rem;
+        padding: 0.625rem 1rem;
+        font-size: 0.875rem;
     }
 }
 
