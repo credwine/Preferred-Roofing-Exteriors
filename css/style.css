@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+﻿/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -202,7 +202,7 @@ h6 {
 .logo-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 100%);
+    background: var(--primary-600);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -223,7 +223,7 @@ h6 {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background: rgba(255, 255, 255, 0.3); height: 1px;
     transition: left 0.5s;
 }
 
@@ -515,7 +515,7 @@ h6 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
+    background: var(--primary-600);
     color: white;
     box-shadow: 0 4px 14px 0 rgba(2, 132, 199, 0.39);
     position: relative;
@@ -541,7 +541,7 @@ h6 {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background: rgba(255, 255, 255, 0.3); height: 1px;
     transition: left 0.5s ease;
 }
 
@@ -550,7 +550,7 @@ h6 {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-800) 100%);
+    background: var(--primary-700);
     box-shadow: 0 8px 24px 0 rgba(2, 132, 199, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
 }
 
@@ -596,7 +596,7 @@ h6 {
 /* Premium Hero Section */
 .hero {
     position: relative;
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 50%, var(--primary-900) 100%);
+    background: var(--primary-700);
     color: white;
     padding: 10rem 0 7rem;
     margin-top: 0;
@@ -635,12 +635,12 @@ h6 {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 100%);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
 
 .hero-overlay.blue-overlay {
-    background: linear-gradient(180deg, rgba(2, 132, 199, 0.4) 0%, rgba(2, 132, 199, 0.25) 50%, rgba(2, 132, 199, 0.15) 100%);
+    background: rgba(25, 85, 140, 0.5);
 }
 
 .hero-content {
@@ -757,7 +757,7 @@ h6 {
     width: 1.5rem;
     height: 1.5rem;
     color: var(--accent-300);
-    filter: drop-shadow(0 0 8px rgba(252, 211, 77, 0.6));
+    
 }
 
 .icon {
@@ -787,7 +787,7 @@ h6 {
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--primary-200), transparent);
+    background: var(--primary-200); height: 1px;
 }
 
 .trust-grid {
@@ -839,8 +839,8 @@ h6 {
     inset: 0;
     border-radius: 16px;
     padding: 2px;
-    background: linear-gradient(135deg, var(--primary-200), var(--primary-400));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    background: var(--primary-500);
+    
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
@@ -954,7 +954,7 @@ h6 {
     color: var(--gray-900);
     margin-bottom: 1.25rem;
     letter-spacing: -0.03em;
-    background: linear-gradient(135deg, var(--gray-900) 0%, var(--primary-700) 100%);
+    background: var(--primary-700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1050,8 +1050,8 @@ h6 {
     inset: 0;
     border-radius: 20px;
     padding: 2px;
-    background: linear-gradient(135deg, var(--primary-400), var(--primary-600), var(--primary-800));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    background: var(--primary-600);
+    
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
@@ -1090,7 +1090,7 @@ h6 {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.5s ease;
 }
 
@@ -1105,7 +1105,7 @@ h6 {
 .service-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    background: rgba(0, 0, 0, 0.3);
     transition: all 0.5s ease;
 }
 
@@ -1116,7 +1116,7 @@ h6 {
     height: 3rem;
     color: white;
     margin-bottom: 0.75rem;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    
     transition: transform 0.4s ease;
 }
 
@@ -1178,7 +1178,7 @@ h6 {
 /* Enhanced Why Choose Section */
 .why-choose {
     padding: 7rem 0;
-    background: linear-gradient(to bottom, var(--gray-50) 0%, white 100%);
+    background: white;
     position: relative;
 }
 
@@ -1200,7 +1200,7 @@ h6 {
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--primary-200), transparent);
+    background: var(--primary-200); height: 1px;
 }
 
 .why-choose-grid {
@@ -1298,7 +1298,7 @@ h6 {
     position: absolute;
     inset: -4px;
     border-radius: 24px;
-    background: linear-gradient(135deg, var(--primary-400), var(--primary-600), var(--primary-800));
+    background: var(--primary-600);
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: -1;
@@ -1345,7 +1345,7 @@ h6 {
 .stat-number {
     font-size: 3rem;
     font-weight: 900;
-    background: linear-gradient(135deg, var(--primary-600), var(--primary-800));
+    background: var(--primary-700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1399,7 +1399,7 @@ h6 {
 }
 
 .testimonial-card {
-    background: linear-gradient(to bottom, white, var(--gray-50));
+    background: var(--gray-50);
     border-radius: 20px;
     padding: 2rem;
     box-shadow: var(--shadow-lg);
@@ -1446,7 +1446,7 @@ h6 {
     width: 1.375rem;
     height: 1.375rem;
     color: var(--accent-400);
-    filter: drop-shadow(0 2px 4px rgba(251, 191, 36, 0.3));
+    
 }
 
 .testimonial-text {
@@ -1489,7 +1489,7 @@ h6 {
 /* Premium CTA Section */
 .cta-section {
     padding: 7rem 0;
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 50%, var(--primary-900) 100%);
+    background: var(--primary-700);
     color: white;
     position: relative;
     overflow: hidden;
@@ -1605,7 +1605,7 @@ h6 {
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--primary-600), transparent);
+    background: var(--primary-600); height: 1px;
 }
 
 .footer-grid {
@@ -1977,7 +1977,7 @@ h6 {
 
 /* Loading State */
 .loading {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background: #f0f0f0;
     background-size: 1000px 100%;
 }
 
@@ -1991,13 +1991,13 @@ h6 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--primary-600), var(--primary-800));
+    background: var(--primary-600);
     border-radius: 6px;
     border: 2px solid var(--gray-100);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--primary-700), var(--primary-900));
+    background: var(--primary-700);
 }
 
 /* Selection */
@@ -2123,7 +2123,7 @@ h6 {
 
 /* Success Message */
 .form-success {
-    background: linear-gradient(135deg, #10b981, #059669);
+    background: #10b981;
     color: white;
     padding: 1.5rem;
     border-radius: 16px;
@@ -2202,7 +2202,7 @@ h6 {
 }
 
 .service-area-card {
-    background: linear-gradient(135deg, #ffffff 0%, var(--gray-50) 100%);
+    background: white;
     border-radius: 16px;
     padding: 2rem 1.5rem;
     text-align: center;
@@ -2217,7 +2217,7 @@ h6 {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--primary-400), var(--primary-600));
+    background: var(--primary-600);
     opacity: 0;
     transition: opacity 0.4s ease;
     z-index: 0;
@@ -2241,7 +2241,7 @@ h6 {
     margin-bottom: 0.75rem;
     position: relative;
     z-index: 1;
-    background: linear-gradient(135deg, var(--gray-900) 0%, var(--primary-700) 100%);
+    background: var(--primary-700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2310,7 +2310,7 @@ h6 {
 
 /* Enhanced Gradient Text */
 .gradient-text {
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 50%, var(--accent-500) 100%);
+    background: var(--primary-600);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2419,10 +2419,7 @@ select:focus-visible {
 }
 
 .skeleton {
-    background: linear-gradient(90deg,
-            var(--gray-200) 0%,
-            var(--gray-300) 50%,
-            var(--gray-200) 100%);
+    background: var(--gray-200);
     background-size: 1000px 100%;
     animation: shimmer 2s infinite linear;
     border-radius: 8px;
@@ -2453,7 +2450,7 @@ select:focus-visible {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 100%);
+    background: var(--primary-600);
     padding: 1rem;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(100%);
@@ -2580,7 +2577,7 @@ img[data-src].loaded {
 
 .testimonial-card:hover .testimonial-stars .star {
     transform: scale(1.1);
-    filter: drop-shadow(0 4px 8px rgba(251, 191, 36, 0.5));
+    
 }
 
 /* Better Trust Badge Display */
@@ -2631,25 +2628,20 @@ img[data-src].loaded {
 /* Enhanced Section Dividers */
 .section-divider {
     height: 1px;
-    background: linear-gradient(90deg,
-            transparent 0%,
-            var(--primary-300) 25%,
-            var(--primary-500) 50%,
-            var(--primary-300) 75%,
-            transparent 100%);
+    background: var(--gray-200);
     margin: 4rem 0;
 }
 
 /* improved CTA Button Variations */
 .btn-accent {
-    background: linear-gradient(135deg, var(--accent-400) 0%, var(--accent-500) 100%);
+    background: var(--accent-400);
     color: var(--gray-900);
     font-weight: 700;
     box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
 }
 
 .btn-accent:hover {
-    background: linear-gradient(135deg, var(--accent-500) 0%, #d97706 100%);
+    background: var(--accent-500);
     box-shadow: 0 8px 24px 0 rgba(245, 158, 11, 0.55);
 }
 
