@@ -1673,6 +1673,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
+.footer-logo .logo-image-wrapper {
+    flex-shrink: 0;
+}
+
+.footer-logo .logo-image-wrapper img {
+    height: 50px;
+    width: auto;
+}
+
 .footer-logo .logo-name {
     color: white;
     background: none;
