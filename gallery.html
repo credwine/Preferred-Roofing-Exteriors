@@ -53,6 +53,48 @@
                 font-size: 0.8125rem;
             }
         }
+        
+        /* Disable animations for gallery items */
+        .services-section .service-card {
+            transition: none !important;
+        }
+        
+        .services-section .service-card:hover {
+            transform: none !important;
+        }
+        
+        .services-section .service-card::before {
+            transition: none !important;
+        }
+        
+        .services-section .service-card:hover::before {
+            opacity: 0 !important;
+        }
+        
+        .services-section .service-image {
+            transition: none !important;
+        }
+        
+        .services-section .service-card:hover .service-image {
+            transform: none !important;
+            transition: none !important;
+        }
+        
+        .services-section .service-image::after {
+            transition: none !important;
+        }
+        
+        .services-section .service-card:hover .service-image::after {
+            opacity: 0.7 !important;
+        }
+        
+        .services-section .service-icon {
+            transition: none !important;
+        }
+        
+        .services-section .service-card:hover .service-icon {
+            transform: none !important;
+        }
     </style>
 </head>
 <body>
