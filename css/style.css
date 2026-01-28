@@ -99,6 +99,14 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 2rem;
 }
 
+@media (min-width: 1024px) {
+    .header-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 1023px) {
     .header-content {
         padding-left: 1.5rem;
@@ -113,6 +121,13 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: inherit;
     transition: opacity 0.2s ease;
+    flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        gap: 1rem;
+    }
 }
 
 .logo:hover {
@@ -209,6 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
     .nav-desktop {
         display: flex;
+        gap: 0.5rem;
     }
 }
 
@@ -253,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
     .header-cta {
         display: flex;
+        gap: 1.5rem;
     }
 }
 
