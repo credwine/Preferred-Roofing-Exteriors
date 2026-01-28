@@ -692,16 +692,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 1.5rem;
     color: var(--accent-300);
     filter: drop-shadow(0 0 8px rgba(252, 211, 77, 0.6));
-    animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
 }
 
 .icon {
