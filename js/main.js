@@ -63,15 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Parallax effect for hero section
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * 0.5;
-            hero.style.transform = `translateY(${rate}px)`;
-        }, { passive: true });
-    }
 
     // Counter animation for stats
     function animateCounter(element, target, duration = 2000) {
