@@ -632,6 +632,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
 }
 
+.hero-overlay.blue-overlay {
+    background: linear-gradient(180deg, rgba(2, 132, 199, 0.4) 0%, rgba(2, 132, 199, 0.25) 50%, rgba(2, 132, 199, 0.15) 100%);
+}
+
 .hero-content {
     position: relative;
     max-width: 48rem;
