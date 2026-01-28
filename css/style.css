@@ -413,20 +413,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
 }
 
-.header.scrolled .nav-mobile a {
-    color: var(--gray-700);
-    text-shadow: none;
-}
-
 .nav-mobile a:hover {
-    color: var(--primary-100);
-    background: rgba(255, 255, 255, 0.1);
-    padding-left: 1.5rem;
-}
-
-.header.scrolled .nav-mobile a:hover {
     color: var(--primary-600);
     background: var(--primary-50);
+    padding-left: 1.5rem;
 }
 
 /* Enhanced Buttons */
