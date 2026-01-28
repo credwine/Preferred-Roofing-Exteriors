@@ -581,18 +581,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     max-width: 48rem;
     z-index: 1;
-    animation: fadeInUp 1s ease-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .hero-badge {
@@ -608,16 +596,6 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4), 0 0 8px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 1s ease-out 0.2s both;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .hero-title {
@@ -627,7 +605,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     letter-spacing: -0.03em;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.3);
-    animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 @media (min-width: 480px) {
@@ -661,7 +638,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7;
     font-weight: 400;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 0, 0, 0.3);
-    animation: fadeInUp 1s ease-out 0.4s both;
 }
 
 @media (min-width: 480px) {
@@ -681,7 +657,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2.5rem;
-    animation: fadeInUp 1s ease-out 0.5s both;
 }
 
 @media (min-width: 640px) {
@@ -696,7 +671,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     gap: 2rem;
     font-size: 0.9375rem;
-    animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 @media (max-width: 767px) {
@@ -822,7 +796,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .trust-item:hover {
-    transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -840,7 +813,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .trust-item:hover .icon {
-    transform: scale(1.1) rotate(5deg);
     background: rgba(2, 132, 199, 0.2);
     box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
 }
@@ -1007,7 +979,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: var(--shadow-lg);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.3s ease;
     border: 1px solid var(--gray-100);
     position: relative;
     height: 100%;
@@ -1035,7 +1007,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card:hover {
-    transform: translateY(-12px) scale(1.02);
     box-shadow: var(--shadow-2xl);
     border-color: transparent;
 }
@@ -1071,8 +1042,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card:hover .service-image {
-    transform: scale(1.1);
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Image scaling removed for better performance */
 }
 
 .service-overlay {
@@ -1094,7 +1064,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card:hover .service-icon {
-    transform: scale(1.2) rotate(5deg);
+    /* Icon animation removed for better performance */
 }
 
 .service-image h3 {
