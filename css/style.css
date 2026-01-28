@@ -1569,10 +1569,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-subtitle {
-    font-size: 1.3125rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.95);
     margin-bottom: 2.5rem;
     line-height: 1.7;
+}
+
+@media (min-width: 480px) {
+    .cta-subtitle {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .cta-subtitle {
+        font-size: 1.3125rem;
+    }
 }
 
 .cta-buttons {
@@ -1884,6 +1896,58 @@ h1, h2, h3, h4, h5, h6 {
     /* Why choose image mobile */
     .why-choose-image {
         margin-bottom: 2rem;
+    }
+    
+    /* Service and location page hero mobile */
+    .hero[style*="padding"] {
+        padding: 4rem 0 3rem !important;
+    }
+    
+    /* Inline styled content mobile */
+    [style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+    
+    [style*="display: grid"] {
+        gap: 1.5rem !important;
+    }
+    
+    [style*="font-size: 2rem"] {
+        font-size: 1.5rem !important;
+    }
+    
+    [style*="font-size: 1.75rem"] {
+        font-size: 1.5rem !important;
+    }
+    
+    [style*="font-size: 1.125rem"] {
+        font-size: 1rem !important;
+    }
+    
+    /* List items mobile */
+    ul[style*="display: grid"] li {
+        padding: 0.75rem !important;
+    }
+    
+    /* Contact info cards mobile */
+    [style*="grid-template-columns: repeat(auto-fit"] {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Text content mobile */
+    p[style*="margin"] {
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Headings mobile */
+    h3[style*="font-size: 1.75rem"] {
+        font-size: 1.5rem !important;
+        margin: 1.5rem 0 1rem !important;
+    }
+    
+    h4[style*="font-size: 1.125rem"] {
+        font-size: 1rem !important;
     }
 }
 
