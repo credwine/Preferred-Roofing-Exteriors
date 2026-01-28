@@ -65,6 +65,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 1rem;
 }
 
+@media (min-width: 480px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+}
+
 @media (min-width: 640px) {
     .container {
         padding: 0 1.5rem;
@@ -109,8 +115,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1023px) {
     .header-content {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: 70px;
     }
 }
 
@@ -146,6 +153,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
     width: auto;
     display: block;
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        height: 50px;
+    }
 }
 
 .logo-text {
@@ -202,6 +215,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     text-shadow: none;
     white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    .logo-name {
+        font-size: 1.25rem;
+    }
+    
+    .logo-tagline {
+        font-size: 0.6875rem;
+    }
 }
 
 .logo-tagline {
@@ -439,6 +462,13 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
+@media (max-width: 767px) {
+    .btn-primary {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.9375rem;
+    }
+}
+
 .btn-primary::before {
     content: '';
     position: absolute;
@@ -515,6 +545,13 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: scroll !important;
 }
 
+@media (max-width: 767px) {
+    .hero {
+        padding: 6rem 0 4rem;
+        min-height: 85vh;
+    }
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -584,13 +621,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 900;
     margin-bottom: 1.5rem;
     line-height: 1.1;
     letter-spacing: -0.03em;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+@media (min-width: 480px) {
+    .hero-title {
+        font-size: 2.75rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -612,13 +655,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.95);
     margin-bottom: 2.5rem;
     line-height: 1.7;
     font-weight: 400;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+@media (min-width: 480px) {
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -700,11 +749,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .trust-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
     justify-items: center;
+}
+
+@media (min-width: 480px) {
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
 }
 
 @media (min-width: 768px) {
