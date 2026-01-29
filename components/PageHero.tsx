@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 // Your roof image – used for all heroes, no overlays
-const HERO_IMAGE = '/images/2022-02-21.webp'
+const HERO_IMAGE = '/images/high-quality-hero.png'
 
 interface PageHeroProps {
   title: string

@@ -99,7 +99,7 @@ export default function HomePage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/2022-02-21.webp)',
+            backgroundImage: 'url(/images/high-quality-hero.png)',
             filter: 'brightness(1.05) contrast(1.02)',
           }}
         />
