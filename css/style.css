@@ -169,14 +169,14 @@ h6 {
 }
 
 .logo img {
-    height: 85px;
+    height: 70px;
     width: auto;
     display: block;
 }
 
 @media (max-width: 767px) {
     .logo img {
-        height: 70px;
+        height: 60px;
     }
 }
 
