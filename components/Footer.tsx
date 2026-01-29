@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react'
 
 export default function Footer() {
@@ -26,24 +27,22 @@ export default function Footer() {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 to-accent-400" aria-hidden="true" />
       <div className="container-custom section-padding pt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
-          {/* Company Info - logo only to match header */}
+          {/* Company Info - logo in white card for visibility */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-xl">PE</span>
-              </div>
+            <Link href="/" className="inline-flex mb-4 rounded-xl bg-white px-4 py-3 shadow-[0_2px_12px_rgba(0,0,0,0.15)] transition-shadow hover:shadow-[0_4px_20px_rgba(0,0,0,0.2)]" aria-label="Preferred Roofing & Exteriors Home">
+              <Image src="/images/logo.png" alt="Preferred Roofing & Exteriors" width={140} height={48} className="h-12 w-auto" />
             </Link>
             <p className="text-sm text-gray-400 mb-4 leading-relaxed">
               Your trusted roofing partner in Atlanta, Georgia. 10+ years of experience delivering quality workmanship and exceptional customer service.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=100066511703762" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/preferred_exteriors_llc/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/preferred-exteriors-llc/about/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>

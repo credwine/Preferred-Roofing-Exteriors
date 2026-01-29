@@ -823,27 +823,25 @@ h6 {
     position: relative;
 }
 
+.trust-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .trust-item::before {
     content: '';
     position: absolute;
     inset: 0;
     border-radius: 16px;
-    padding: 2px;
-    background: var(--primary-500);
-
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    pointer-events: none;
     opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.trust-item:hover::before {
-    opacity: 1;
 }
 
 .trust-item:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .trust-item .icon {
@@ -1619,25 +1617,29 @@ h6 {
 }
 
 .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
     margin-bottom: 1.5rem;
 }
 
-.footer-logo .logo-image-wrapper {
-    flex-shrink: 0;
+.footer-logo-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    transition: box-shadow 0.2s ease;
 }
 
-.footer-logo .logo-image-wrapper img {
-    height: 50px;
+.footer-logo-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer-logo-card img {
+    height: 48px;
     width: auto;
-}
-
-.footer-logo .logo-name {
-    color: #ffffff;
-    background: none;
-    -webkit-text-fill-color: #ffffff;
+    display: block;
 }
 
 .footer-description {
@@ -2337,12 +2339,10 @@ h6 {
         0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Enhanced Trust Signals with Glow */
+/* Enhanced Trust Signals - no blue overlay so badges stay visible */
 .trust-item:hover {
     background: rgba(255, 255, 255, 0.08);
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.3),
-        0 0 30px rgba(2, 132, 199, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Improved Hero Badge with Animation */
