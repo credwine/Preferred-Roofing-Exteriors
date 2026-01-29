@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircle, ArrowRight, Search, FileText, Shield } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'Roof Inspection Services | Preferred Roofing & Exteriors | Atlanta, GA',
@@ -11,16 +12,12 @@ export const metadata: Metadata = {
 export default function RoofInspectionPage() {
   return (
     <div className="pt-20">
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
-        <div className="container-custom">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Professional Roof Inspections in Atlanta, GA
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl">
-            We provide thorough roof inspections to identify damage, wear, and potential problems to help you make informed decisions.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Professional Roof Inspections in Atlanta, GA"
+        highlight="Atlanta, GA"
+        subtitle="We provide thorough roof inspections to identify damage, wear, and potential problems to help you make informed decisions."
+        centered={false}
+      />
 
       <section className="section-padding bg-white">
         <div className="container-custom">

@@ -22,21 +22,18 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="container-custom section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Company Info */}
+    <footer className="bg-gray-900 text-gray-300 relative">
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 to-accent-400" aria-hidden="true" />
+      <div className="container-custom section-padding pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+          {/* Company Info - logo only to match header */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-800 rounded-lg flex items-center justify-center">
+            <Link href="/" className="inline-flex items-center mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-white font-bold text-xl">PE</span>
               </div>
-              <div>
-                <div className="font-display font-bold text-white text-lg">Preferred Exteriors</div>
-                <div className="text-xs text-gray-400">Atlanta, GA Roofing Experts</div>
-              </div>
-            </div>
-            <p className="text-sm text-gray-400 mb-4">
+            </Link>
+            <p className="text-sm text-gray-400 mb-4 leading-relaxed">
               Your trusted roofing partner in Atlanta, Georgia. 10+ years of experience delivering quality workmanship and exceptional customer service.
             </p>
             <div className="flex space-x-4">

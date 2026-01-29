@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, Clock, AlertTriangle, CheckCircle, ArrowRight } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'Emergency Roofing Services | Preferred Roofing & Exteriors | Atlanta, GA',
@@ -11,20 +12,21 @@ export const metadata: Metadata = {
 export default function EmergencyPage() {
   return (
     <div className="pt-20">
-      <section className="bg-gradient-to-br from-red-600 to-red-800 text-white py-16">
-        <div className="container-custom">
-          <div className="flex items-center mb-4">
-            <AlertTriangle className="w-12 h-12 mr-4" />
-            <h1 className="font-display text-4xl md:text-5xl font-bold">
-              Emergency Roofing Services
-            </h1>
+      <PageHero
+        title="Emergency Roofing Services"
+        highlight="Emergency"
+        subtitle="Need urgent roof repair? We offer 24/7 emergency roofing services for storm damage, active leaks, and other urgent issues in Atlanta, GA."
+        centered={false}
+      />
+      <section className="bg-primary-700 text-white py-4">
+        <div className="container-custom flex flex-wrap items-center justify-between gap-4">
+          <div className="flex items-center">
+            <AlertTriangle className="w-8 h-8 mr-3 text-accent-300" />
+            <span className="font-semibold">24/7 Emergency Response</span>
           </div>
-          <p className="text-xl text-red-100 max-w-3xl mb-6">
-            Need urgent roof repair? We offer 24/7 emergency roofing services for storm damage, active leaks, and other urgent issues in Atlanta, GA.
-          </p>
           <a
             href="tel:7063469577"
-            className="inline-flex items-center bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-50 transition-colors"
+            className="inline-flex items-center bg-accent-400 text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-accent-300 transition-colors"
           >
             <Phone className="w-6 h-6 mr-2" />
             Call Now: (706) 346-9577

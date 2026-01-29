@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Award, Shield, Users, Heart, CheckCircle, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'About Us | Preferred Roofing & Exteriors, LLC | Atlanta, GA',
@@ -41,17 +42,11 @@ export default function AboutPage() {
 
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
-        <div className="container-custom text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            About Preferred Roofing & Exteriors
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            We are committed to quality plain and simple – quality exteriors and quality customer service.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="About Preferred Roofing & Exteriors"
+        highlight="Preferred Roofing & Exteriors"
+        subtitle="We are committed to quality plain and simple – quality exteriors and quality customer service."
+      />
 
       {/* Our Story */}
       <section className="section-padding bg-white">
@@ -75,7 +70,7 @@ export default function AboutPage() {
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <div 
                   className="w-full h-full bg-cover bg-center"
-                  style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800)' }}
+                  style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800)' }}
                 ></div>
               </div>
             </div>

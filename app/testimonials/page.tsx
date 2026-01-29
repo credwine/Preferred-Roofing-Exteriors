@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Star, Quote, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'Customer Testimonials | Preferred Roofing & Exteriors | Atlanta, GA',
@@ -56,17 +57,11 @@ export default function TestimonialsPage() {
 
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
-        <div className="container-custom text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Customer Testimonials
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            Don't just take our word for it - see what our customers have to say about their experience with Preferred Roofing & Exteriors
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Customer Testimonials"
+        highlight="Testimonials"
+        subtitle="Don't just take our word for it - see what our customers have to say about their experience with Preferred Roofing & Exteriors"
+      />
 
       {/* Testimonials Grid */}
       <section className="section-padding bg-white">

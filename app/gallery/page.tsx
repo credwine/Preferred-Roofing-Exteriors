@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'Our Work Gallery | Preferred Roofing & Exteriors | Atlanta, GA',
@@ -36,14 +37,14 @@ export default function GalleryPage() {
       id: 4,
       title: 'Gutter Installation',
       category: 'Gutters',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
       location: 'Atlanta, GA'
     },
     {
       id: 5,
       title: 'Siding Replacement',
       category: 'Siding',
-      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+      image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800',
       location: 'Sandy Springs, GA'
     },
     {
@@ -80,17 +81,11 @@ export default function GalleryPage() {
 
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
-        <div className="container-custom text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Our Work Gallery
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            Browse our portfolio of completed projects showcasing quality workmanship and exceptional results
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Our Work Gallery"
+        highlight="Our Work"
+        subtitle="Browse our portfolio of completed projects showcasing quality workmanship and exceptional results"
+      />
 
       {/* Gallery */}
       <section className="section-padding bg-white">

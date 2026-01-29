@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircle, ArrowRight, Droplets, Wrench } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'Gutter Services | Preferred Roofing & Exteriors | Atlanta, GA',
@@ -11,16 +12,12 @@ export const metadata: Metadata = {
 export default function GuttersPage() {
   return (
     <div className="pt-20">
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
-        <div className="container-custom">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Gutter Services in Atlanta, GA
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl">
-            We offer professional gutter installation, repair, and cleaning to ensure proper drainage and prevent water damage to your property.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Gutter Services in Atlanta, GA"
+        highlight="Atlanta, GA"
+        subtitle="We offer professional gutter installation, repair, and cleaning to ensure proper drainage and prevent water damage to your property."
+        centered={false}
+      />
 
       <section className="section-padding bg-white">
         <div className="container-custom">

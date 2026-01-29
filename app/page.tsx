@@ -30,14 +30,14 @@ export default function HomePage() {
       description: 'Professional installation, repair, and cleaning for proper drainage.',
       icon: Shield,
       href: '/services/gutters',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800'
+      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
     },
     {
       title: 'Siding Services',
       description: 'Quality siding installation and repair to enhance appearance and protection.',
       icon: Shield,
       href: '/services/siding',
-      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800'
+      image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800'
     },
     {
       title: 'Emergency Roofing',
@@ -94,47 +94,59 @@ export default function HomePage() {
 
   return (
     <div className="pt-20">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.15
-        }}></div>
-        
-        <div className="container-custom relative py-24 md:py-32 lg:py-40">
+      {/* Hero Section – your roof image, no overlays, text shadow for readability */}
+      <section className="relative text-white overflow-hidden py-24 md:py-32 lg:py-40 min-h-[520px] flex items-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/images/2022-02-21.webp)',
+            filter: 'brightness(1.05) contrast(1.02)',
+          }}
+        />
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-6">
+            <div
+              className="inline-block px-4 py-2 bg-black/40 backdrop-blur-sm rounded-full text-sm font-semibold mb-6"
+              style={{ textShadow: '0 1px 4px rgba(0,0,0,0.8)' }}
+            >
               Atlanta's Trusted Roofing Experts
             </div>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1
+              className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+              style={{ textShadow: '0 2px 12px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.8)' }}
+            >
               Top-Rated Roofing Contractor in{' '}
               <span className="text-accent-300">Atlanta, GA</span>
             </h1>
-            <p className="text-xl md:text-2xl text-primary-100 mb-8 leading-relaxed">
-              Residential & Commercial Roofing Experts • 10+ Years Experience • Licensed & Insured • 0% Financing Available
+            <p
+              className="text-xl md:text-2xl mb-8 leading-relaxed px-5 py-3 rounded-lg inline-block"
+              style={{
+                background: 'rgba(0, 0, 0, 0.5)',
+                color: 'rgba(255,255,255,0.98)',
+                textShadow: '0 1px 3px rgba(0,0,0,0.5)',
+              }}
+            >
+              Residential & Commercial Roofing Experts | 10+ Years Experience | Licensed & Insured | 0% Financing Available
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="btn-primary bg-white text-primary-700 hover:bg-primary-50 text-lg px-8 py-4 inline-flex items-center justify-center">
+              <Link href="/contact" className="btn-primary bg-white text-primary-700 hover:bg-primary-50 text-lg px-8 py-4 inline-flex items-center justify-center shadow-lg">
                 Get Free Estimate
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <a
                 href="tel:7063469577"
-                className="btn-secondary border-white text-white hover:bg-white/10 text-lg px-8 py-4 inline-flex items-center justify-center"
+                className="btn-secondary border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-4 inline-flex items-center justify-center shadow-lg"
               >
                 <Phone className="mr-2 w-5 h-5" />
                 (706) 346-9577
               </a>
             </div>
-            <div className="mt-8 flex flex-wrap gap-6 text-sm">
+            <div className="mt-8 flex flex-wrap gap-6 text-sm" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.9)' }}>
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 mr-2 text-accent-300" />
                 Free Inspections

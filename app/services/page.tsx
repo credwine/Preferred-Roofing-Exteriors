@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Shield, Wrench, Search, Droplets, Home, Clock } from 'lucide-react'
 import { motion } from 'framer-motion'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'Our Services | Preferred Roofing & Exteriors | Atlanta, GA',
@@ -56,17 +57,11 @@ export default function ServicesPage() {
 
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
-        <div className="container-custom text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Our Services
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-            Comprehensive roofing and exterior solutions for your home or business in Atlanta and surrounding areas.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Our Services"
+        highlight="Services"
+        subtitle="Comprehensive roofing and exterior solutions for your home or business in Atlanta and surrounding areas."
+      />
 
       {/* Services Grid */}
       <section className="section-padding bg-white">

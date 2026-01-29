@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { FileText, CheckCircle, Shield, Phone, ArrowRight, AlertCircle } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'Insurance Claims Assistance | Preferred Roofing & Exteriors | Atlanta, GA',
@@ -11,17 +12,12 @@ export const metadata: Metadata = {
 export default function InsuranceClaimsPage() {
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
-        <div className="container-custom">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Insurance Claims Specialists
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl">
-            We assist homeowners with roof insurance claims from start to finish, working with your insurance company to get the coverage you deserve.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Insurance Claims Specialists"
+        highlight="Insurance Claims"
+        subtitle="We assist homeowners with roof insurance claims from start to finish, working with your insurance company to get the coverage you deserve."
+        centered={false}
+      />
 
       {/* Main Content */}
       <section className="section-padding bg-white">

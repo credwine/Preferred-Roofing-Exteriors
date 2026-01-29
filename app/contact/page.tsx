@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
+import PageHero from '@/components/PageHero'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Preferred Roofing & Exteriors, LLC | Atlanta, GA',
@@ -10,17 +11,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="pt-20">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
-        <div className="container-custom text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Contact Preferred Roofing & Exteriors
-          </h1>
-          <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-            We're here to help protect your biggest investment. Get your free estimate today!
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Contact Preferred Roofing & Exteriors"
+        highlight="Preferred Roofing & Exteriors"
+        subtitle="We're here to help protect your biggest investment. Get your free estimate today!"
+      />
 
       {/* Contact Info & Form */}
       <section className="section-padding bg-gray-50">
